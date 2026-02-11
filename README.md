@@ -1,4 +1,4 @@
-# Scalable Backend Platform
+### Scalable Backend Platform
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.x-red)
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue)
@@ -6,7 +6,7 @@
 
 ---
 
-## Project Overview
+### Project Overview
 
 **Scalable Backend Platform** is a professional, modular, and production-ready backend system built with **Laravel 12**.  
 It follows **clean architecture** with **Controller → Service → Repository → API Resource** pattern for maintainable and scalable development.  
@@ -19,7 +19,7 @@ This project is designed for:
 
 ---
 
-## Features
+### Features
 
 - **User Module** (CRUD)  
 - **API Resource** responses for standardized JSON  
@@ -32,7 +32,7 @@ This project is designed for:
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 - PHP 8.2  
 - Laravel 12.x  
@@ -42,7 +42,7 @@ This project is designed for:
 
 ---
 
-## Folder Structure
+### Folder Structure
 app/
 ├── Http/
 │ ├── Controllers/Api/V1/UserController.php
@@ -57,10 +57,9 @@ routes/
 └── api.php
 
 
-
 ---
 
-## API Endpoints (v1)
+### API Endpoints (v1)
 
 | Method | Endpoint           | Description                    |
 |--------|------------------|--------------------------------|
@@ -77,44 +76,60 @@ routes/
 
 ---
 
-## Authentication
+### Authentication
 
 - Token-based API authentication using **Laravel Sanctum**  
 - Protect routes using `auth:sanctum` middleware  
 
 **Example:**  
 
-```php
+```bash
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('users', UserController::class);
 });
+```
 
-# Clone the repo
+### Clone the repo
+```bash
 git clone git@github.com:parthokar90/scalable-backend-platform.git
 cd scalable-backend-platform
+```
 
-# Install dependencies
+### Install dependencies
+```bash
 composer install
+```
 
-# Copy env file
+### Copy env file
+```bash
 cp .env.example .env
+```
 
-# Generate app key
+### Generate app key
+```bash
 php artisan key:generate
+```
 
-# Set up database in .env
+### Set up database in .env
+```bash
 DB_DATABASE=your_db
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
-# Run migrations
+#### Run migrations
+```bash
 php artisan migrate
+```
 
-# Start dev server
+### Start dev server
+```bash
 php artisan serve
+```
 
-## Testing
-# Run unit and feature tests
+### Testing
+```bash
 php artisan test
+```
 
 
