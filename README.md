@@ -14,7 +14,6 @@ It follows **clean architecture** with **Controller → Service → Repository �
 This project is designed for:
 
 - Rapid development of SaaS products or enterprise APIs  
-- Recruiter/ATS-friendly portfolio showcasing senior backend skills  
 - Best practices in Laravel, API design, and clean code
 
 ---
